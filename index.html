@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student mark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="form text-start" id="form">
+                    <label for="">Hindi</label>
+                    <input type="number" id="hindi" placeholder="Enter hindi mark" required>
+                    <label for="">English</label>
+                    <input type="number" id="english" placeholder="Enter english mark" required>
+                    <label for="">Maths</label>
+                    <input type="number" id="maths" placeholder="Enter maths mark" required>
+                    <label for="">Science</label>
+                    <input type="number" id="science" placeholder="Enter science mark" required>
+                    <label for="">Sanskrit</label>
+                    <input type="number" id="sanskrit" placeholder="Enter sanskrit mark" required>
+                    <button type="submit" onclick="getValue()">Submit</button>
+                    <div id="showGrade" style="margin-top: 15px; display: none;">
+                        <p>Total: <span id="total"></span></p>
+                        <p>Percentage: <span id="percentage"></span></p>
+                        <p>Grade: <span id="grade"></span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
